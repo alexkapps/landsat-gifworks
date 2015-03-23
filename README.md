@@ -9,7 +9,7 @@ Boston, MA from August 2014 through March 2015. If you didn't hear.. this was a 
 to get this gif I used:
 
 
-    (venv)alex@alex-laptop:~/Documents/for_fun$ bash land-gif.sh 42 -71
+    (venv)alex@alex-laptop:~/Documents/for_fun$ bash landsat-gifworks.sh 42 -71
     
 - I included a date range of **-s "august 30 2014" -e "march 23 201**, but since the script is still under construction.. I ended up removing the first TIF (as it was too dark) from the displayed product.
 - Any time you want to remove an image from the final product, identify which TIF(s) you don't want, delete them from the working folder, and run the final convert command again. Make sure to replace the filename in that final command so that it reflects the path/row 3+3=6digit ID (in this example case it was 011031).
