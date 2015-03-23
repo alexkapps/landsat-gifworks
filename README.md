@@ -1,5 +1,5 @@
 # landsat-gifworks
-A bash tool (script) to generate animated (gif) temporal progressions of land cover with inputs of lat, long, and start/end dates. Requires landsat-util, GNU parallel, and imagemagick. Still under construction!
+A bash tool (script) to generate animated (gif) temporal progressions of land cover with inputs of lat, long, and start/end dates (for now change dates in the code). Requires landsat-util, GNU parallel, and imagemagick. Still under construction!
 
 - this is a work in progress. If you know enough to fiddle with it, it's all there!
 
