@@ -30,3 +30,4 @@ To Do List:
 - remove all working files after its done (these add up quick, keep that in mind)
 - comments
 - fix the final imagemagick convert command so that manual entry of the path/row ID numbers do not need to be entered every time.
+- display the number of images to be downloaded and processed and make sure that this is okay with the user before continuing.
