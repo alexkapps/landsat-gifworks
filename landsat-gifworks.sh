@@ -30,7 +30,7 @@ download_process () {
 export -f download_process
 
 echo 'GNU parallel is downloading and processing landsat scenes with landsat-util. This may take a long time.'
-#parallel --progress "download_process {}" ::: $(for ID in ${IDLIST}; do echo $ID; done)
+parallel --progress "download_process {}" ::: $(for ID in ${IDLIST}; do echo $ID; done)
 
 #MAXLAT=$(expr $LAT + 1)
 #echo $MAXLAT
