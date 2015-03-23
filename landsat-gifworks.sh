@@ -19,10 +19,8 @@ awk '/"sceneID": "/,/",/' ~/land-gif/working/search.txt | awk -F'"' '{print $4}'
 IDLIST=( "$(awk '/"sceneID": "/,/",/' ~/land-gif/working/search.txt | awk -F'"' '{print $4}')" )
 echo $IDLIST
 
-IDLISTLEN=${#IDLIST[@]}
-echo $IDLISTLEN
+#to do: print how many items there are in list 
 
-#print how many items there are in list 
 download_process () {
 	echo $1' is going'
 	landsat download $1;
@@ -34,14 +32,14 @@ export -f download_process
 echo 'GNU parallel is downloading and processing landsat scenes with landsat-util. This may take a long time.'
 #parallel --progress "download_process {}" ::: $(for ID in ${IDLIST}; do echo $ID; done)
 
-MAXLAT=$(expr $LAT + 1)
-echo $MAXLAT
-MINLAT=$(expr $LAT - 1)
-echo $MINLAT
-MAXLON=$(expr $LON + 1)
-echo $MAXLON
-MINLON=$(expr $LON - 1)
-echo $MINLON
+#MAXLAT=$(expr $LAT + 1)
+#echo $MAXLAT
+#MINLAT=$(expr $LAT - 1)
+#echo $MINLAT
+#MAXLON=$(expr $LON + 1)
+#echo $MAXLON
+#MINLON=$(expr $LON - 1)
+#echo $MINLON
 
 crop_and_cp () {
 	echo $1
