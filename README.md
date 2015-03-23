@@ -18,8 +18,8 @@ to get this gif I used:
 Dependencies
 -
 - [landsat-util](https://github.com/developmentseed/landsat-util) by [developmentseed](https://developmentseed.org/)
-- imagemagick
-- GNU parallel
+- [imagemagick](http://www.imagemagick.org/)
+- [GNU parallel](http://www.gnu.org/software/parallel/)
 
 
 To Do List:
